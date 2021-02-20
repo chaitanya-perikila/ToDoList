@@ -163,4 +163,15 @@ select {
   form input {
     font-size: 1rem;
   }
+  .todo {
+    width: 38vh;
+    min-width: 30%;
+    margin-bottom: 0.5px;
+    padding: 0.5px;
+  }
+  .todo-item {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
 }
