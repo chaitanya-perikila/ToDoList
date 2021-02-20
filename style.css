@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: linear-gradient(120deg, #e2c35d, #d88771); */
+  background-image: linear-gradient(120deg, #31e6e6, #fc4eff);
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  border: none;
+  padding: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+}
+
+.main {
+  display: inline-flex;
+}
+
+form button {
+  color: #fc4eff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.todo-button:hover {
+  background: #fc4eff;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-item {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  width: 25vh;
+  list-style: none;
+  min-width: 30%;
+  margin-bottom: 5px;
+  padding: 5px;
+  overflow-wrap: break-word;
+}
+
+.todo {
+  display: flex;
+  transition: all 0.5s ease;
+}
+.check-btn,
+.trash-btn {
+  color: white;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 5px;
+}
+.check-btn {
+  cursor: pointer;
+  background-color: rgb(83, 221, 83);
+}
+.trash-btn {
+  cursor: pointer;
+  background-color: #fc4eff;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translate(8rem) rotateZ(30deg);
+  opacity: 0;
+}
+
+select {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  font-size: 15px;
+  font-weight: bold;
+  color: #fc4eff;
+  cursor: pointer;
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem;
+  pointer-events: none;
+  color: #47dd33;
+  background: white;
+}
+
+.select:hover::after {
+  color: white;
+  background: #47dd33;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    flex-wrap: wrap;
+  }
+}
