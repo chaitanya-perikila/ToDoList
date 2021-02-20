@@ -158,3 +158,9 @@ select {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 425px) {
+  form input {
+    font-size: 1rem;
+  }
+}
