@@ -136,6 +136,23 @@ select {
   background: #47dd33;
 }
 
+.fade {
+  animation: fade;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  0% {
+    display: flex;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   form {
     flex-wrap: wrap;
